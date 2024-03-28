@@ -1,0 +1,55 @@
+/* Home.css */
+
+.home .hero {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+ /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .search-box {
+    position: absolute;
+    top: 50%; /* Center vertically in the hero section */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    /* Add more styles for your search box here */
+  }
+  
+  .home .search-box input,
+  .home .search-box button {
+    margin: 5px;
+  }
+  
+  .home .hotels-display {
+    padding: 20px;
+    text-align: center; /* Centering the title */
+  }
+  
+  .home .hotels-display h2 {
+    margin-bottom: 20px;
+  }
+  
+  .home .hotel-placeholder {
+    width: 200px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    background-color: #ccc; /* Placeholder color */
+    display: inline-block; /* To display side by side */
+    margin: 10px;
+    /* Add more styles for your placeholders here */
+  }
+  
+  .parallax-section {
+    height: 50vh; /* Full viewport height */
+    background-image: url('https://mbluxury1.s3.amazonaws.com/2022/11/17184850/Luxury-Hotel-Chains-1.jpg'); /* Path to your parallax background image */
+    background-attachment: fixed; /* This creates the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* This will vertically center the SearchBar */
+    justify-content: center; /* This will horizontally center the SearchBar */
+  }
