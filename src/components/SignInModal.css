@@ -86,14 +86,5 @@
       transform: translateY(0);
     }
   }
-  /* Adjusted to only affect buttons inside .modal-content */
-.modal-content button[type="submit"] {
-    /* Button styles */
-  }
-  
-  .modal-content button.close-button {
-    /* Close button styles */
-  }
-  
-  /* Continue scoping other styles */
+
   
