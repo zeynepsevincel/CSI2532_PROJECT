@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faBookmark, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import SignInModal from './SignInModal'; // Make sure the path to SignInModal is correct
 
@@ -29,12 +29,7 @@ function NavBar() {
           </li>
         </ul>
         <ul className="navbar-nav navbar-right">
-          <li className="nav-item">
-            <FontAwesomeIcon icon={faGlobeAmericas} /> English
-          </li>
-          <li className="nav-item">
-            <FontAwesomeIcon icon={faBookmark} /> My Reservations
-          </li>
+        
           <li className="nav-item">
             <FontAwesomeIcon icon={faUser} /> Join
           </li>

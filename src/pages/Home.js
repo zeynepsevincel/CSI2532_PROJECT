@@ -10,7 +10,7 @@ const Home = () => {
 
       </div>
       <section className="hotels-display">
-        <h2>OUR HOTELS</h2>
+        <h2>Explore our most luxurious stays</h2>
         {/* You'll populate this section dynamically, presumably with a list of hotels. */}
         {/* For now, we'll just simulate with placeholders */}
         <div className="hotel-placeholder"></div>
