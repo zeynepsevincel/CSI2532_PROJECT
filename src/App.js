@@ -4,6 +4,8 @@ import Home from './pages/Home'; // Make sure the path is correct
 import Footer from './components/Footer'; // Import the Footer component
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import JoinUs from './pages/JoinUs';
+import FindReserve from './pages/FindReserve';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <NavBar />
         <Routes> {/* Use Routes for defining paths */}
           <Route path="/" element={<Home />} />
+          <Route path="/join-us" element={<JoinUs />} />
+          <Route path="/find-reserve" element={<FindReserve />} />
           {/* Define other routes here */}
         </Routes>
         <Footer /> {/* Add the Footer component here */}
