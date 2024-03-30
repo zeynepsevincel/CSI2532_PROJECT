@@ -6,9 +6,9 @@ import HotelCard from '../components/HotelCard';
 const Home = () => {
   const hotelData = [
     {
-      name: "BlueWave Miami Beach",
-      location: "Miami, Florida",
-      price: "$350",
+      name: "North Star Seaside Resort",
+      location: "Atlantic City, NJ",
+      price: "$450",
       stars: 5,
       imageUrl: "https://www.miamiandbeaches.com/getmedia/63620274-056c-45c3-b384-5f8d6139cf79/1hotel-south-beach-balcony-1440x900.jpg"
     },
@@ -20,11 +20,11 @@ const Home = () => {
       imageUrl: 'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/96/e4/e09d49a30b95de8e154b0bd61b66fa5612306e5e4b1b0de07674c0a74ed2.jpeg' // Replace with actual image path
     },
     {
-      name: 'UrbanStay Downtown Toronto',
-      location: 'Toronto, Ontario',
-      price: '$180',
-      stars: 3,
-      imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/61a26193d0b62c6be454fdde/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds'
+      name: 'North Star City Center',
+      location: 'Denver, CO',
+      price: '$350',
+      stars: 4,
+      imageUrl: 'https://symphony.cdn.tambourine.com/hotel-indigo-denver-redesign/media/indigodenver-homepage-hero-5fe11061c4f66.jpg'
     
     }
     // ... Add more hotel data objects based on the information you have

@@ -1,6 +1,7 @@
 import React from 'react';
-import { hotelChains } from '../data/hotels'; // Update this import path as necessary
-import './AboutUs.css'; // Ensure the CSS file path is correct
+import { hotelChains } from '../data/hotels';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './AboutUs.css';
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,10 @@ const AboutUs = () => {
             <h3>Hotels:</h3>
             <ul>
               {chain.hotels.map((hotel, hotelIndex) => (
-                <li key={hotelIndex}>{hotel.hotelName}</li>
+                <li key={hotelIndex}>
+                  {/* Link to the hotel's page using React Router's Link component */}
+                  <Link to={`/hotels/${hotel.hotelName}`}>{hotel.hotelName}</Link>
+                </li>
               ))}
             </ul>
           </div>

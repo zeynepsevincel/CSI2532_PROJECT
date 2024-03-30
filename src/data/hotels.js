@@ -50,7 +50,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/executive-suite-image.jpg'
+            imageUrl: 'https://t3.ftcdn.net/jpg/02/71/08/28/360_F_271082810_CtbTjpnOU3vx43ngAKqpCPUBx25udBrg.jpg'
           },
           {
             roomType: 'Deluxe Room',
@@ -60,7 +60,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: false,
             issues: null,
-            imageUrl: 'https://example.com/deluxe-room-image.jpg'
+            imageUrl: 'https://media.istockphoto.com/id/1677784097/photo/modern-hotel-apartment-with-bathroom.webp?b=1&s=170667a&w=0&k=20&c=rKzi2VKY7EAq_Ggx7AoYtRetG_aNze-L6nk4n4uwLLg='
           },
         ],
       },
@@ -79,7 +79,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/urban-suite-image.jpg'
+            imageUrl: 'https://www.zinus.com.sg/cdn/shop/articles/5-bedroom-design-ideas-to-transform-it-into-a-luxury-hotel-suite_980x.jpg?v=1669103710'
           },
           {
             roomType: 'Classic Room',
@@ -89,7 +89,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: false,
             issues: null,
-            imageUrl: 'https://example.com/classic-room-image.jpg'
+            imageUrl: 'https://images.trvl-media.com/lodging/66000000/65990000/65989800/65989792/4183572a.jpg?impolicy=fcrop&w=575&h=323&p=0.5&q=mediumHigh'
           },
         ],
       },
@@ -147,7 +147,7 @@ export const hotelChains = [
             hasSeaView: true, // Assuming lake view is categorized as sea view
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/lakeview-suite-image.jpg'
+            imageUrl: 'https://media.cnn.com/api/v1/images/stellar/prod/140127103354-peninsula-shanghai-actual-river-room.jpg?q=w_3320,h_2041,x_0,y_0,c_fill/h_618'
           },
           {
             roomType: 'Cozy Cottage',
@@ -157,7 +157,7 @@ export const hotelChains = [
             hasSeaView: true, // Assuming lake view is categorized as sea view
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/cozy-cottage-image.jpg'
+            imageUrl: 'https://i.pinimg.com/550x/d7/1f/79/d71f79e1e76221f35f5911488aeb8f0c.jpg'
           },
         ],
       },
@@ -176,7 +176,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/city-suite-image.jpg'
+            imageUrl: 'https://st3.depositphotos.com/33288918/35458/i/450/depositphotos_354585158-stock-photo-interior-modern-luxury-bedroom-marble.jpg'
           },
           {
             roomType: 'Economy Room',
@@ -186,7 +186,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: false,
             issues: null,
-            imageUrl: 'https://example.com/economy-room-image.jpg'
+            imageUrl: 'https://media.nomadicmatt.com/2023/cheaphotelrooms.jpg'
           },
         ],
       },
@@ -244,7 +244,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/executive-suite.jpg'
+            imageUrl: 'https://img.freepik.com/premium-photo/random-best-photo_865967-74897.jpg'
           },
           {
             roomType: 'Diplomat Deluxe',
@@ -254,7 +254,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: true,
             issues: null,
-            imageUrl: 'https://example.com/diplomat-deluxe.jpg'
+            imageUrl: 'https://img.freepik.com/premium-photo/random-best-photo_865967-74468.jpg'
           },
           {
             roomType: 'Ambassador Pod',
@@ -264,7 +264,7 @@ export const hotelChains = [
             hasSeaView: false,
             isExtendable: false,
             issues: null,
-            imageUrl: 'https://example.com/ambassador-pod.jpg'
+            imageUrl: 'https://images.trvl-media.com/lodging/79000000/78280000/78270400/78270336/233e389d.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium'
           },
         ],
       },
@@ -326,7 +326,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: true,
           issues: null,
-          imageUrl: 'https://example.com/riverside-bungalow-image.jpg'
+          imageUrl: 'https://www.themanual.com/wp-content/uploads/sites/9/2023/07/the-phoenician-luxury-collection-hotel-scottsdale-bedroom-suite.jpg?fit=800%2C800&p=1'
         },
         {
           roomType: 'Garden Room',
@@ -336,7 +336,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/garden-room-image.jpg'
+          imageUrl: 'https://img2.chinadaily.com.cn/images/201811/16/5bee5c66a310eff36906b2f7.jpeg'
         },
       ],
     },
@@ -355,7 +355,7 @@ export const hotelChains = [
           hasSeaView: false, // Since it's a river view
           isExtendable: true,
           issues: null,
-          imageUrl: 'https://example.com/riverside-suite.jpg'
+          imageUrl: 'https://t3.ftcdn.net/jpg/04/16/48/08/360_F_416480811_HmtgLEq1GLmqy0WpKuAfuaYFn7u08IyF.jpg'
         },
         {
           roomType: 'Explorer Room',
@@ -365,7 +365,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/explorer-room.jpg'
+          imageUrl: 'https://media.istockphoto.com/id/1299710067/photo/double-bedroom-with-sea-view.jpg?s=612x612&w=0&k=20&c=LPNC-aqrsOsgxU8eqPcR38ACIOIjqAmh0VSKclIa2gs='
         },
         {
           roomType: 'Adventurer Bunk',
@@ -375,7 +375,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/adventurer-bunk.jpg'
+          imageUrl: 'https://media.istockphoto.com/id/1756553862/photo/modern-luxury-hotel-room.webp?b=1&s=170667a&w=0&k=20&c=kA4TyQjo7S_oVJna96QKMzrPeCQvYBweLG72FLVoXaU='
         },
       ],
     },
@@ -432,7 +432,7 @@ export const hotelChains = [
           hasSeaView: false, // Assuming this refers to a lake view
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/vista-suite-image.jpg'
+          imageUrl: 'https://i.insider.com/5b98043f672e1645d97594a1?width=750&format=jpeg&auto=webp'
         },
         {
           roomType: 'Vista Double',
@@ -442,7 +442,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: true,
           issues: null,
-          imageUrl: 'https://example.com/vista-double-image.jpg'
+          imageUrl: 'https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl9jrj1iu2758uqooalqmj7ga/public'
         },
       ],
     },
@@ -461,7 +461,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: true,
           issues: null,
-          imageUrl: 'https://example.com/garden-suite-image.jpg'
+          imageUrl: 'https://png.pngtree.com/background/20230823/original/pngtree-natural-ambience-infused-modern-hotel-room-with-indoor-garden-3d-rendering-picture-image_4789808.jpg'
         },
         {
           roomType: 'Standard Garden Room',
@@ -471,7 +471,7 @@ export const hotelChains = [
           hasSeaView: false,
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/standard-garden-room-image.jpg'
+          imageUrl: 'https://media.istockphoto.com/id/1050564510/photo/3d-rendering-beautiful-luxury-bedroom-suite-in-hotel-with-tv.webp?b=1&s=170667a&w=0&k=20&c=GMmTKXJGXpNLRuDPInhn_1Ll_HIdR10axKKcbOSCfYo='
         },
       ],
     },
@@ -490,7 +490,7 @@ export const hotelChains = [
           hasSeaView: true, // Assuming this refers to a bay view
           isExtendable: true,
           issues: null,
-          imageUrl: 'https://example.com/bayfront-exclusive-image.jpg'
+          imageUrl: 'https://danaberez.com/wp-content/uploads/2021/02/hotels-with-a-view-nyc-99.jpg'
         },
         {
           roomType: 'Bayfront Deluxe',
@@ -500,7 +500,7 @@ export const hotelChains = [
           hasSeaView: true,
           isExtendable: false,
           issues: null,
-          imageUrl: 'https://example.com/bayfront-deluxe-image.jpg'
+          imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/6522927d5394bc2b7f10c8ee/one/960x0.jpg?height=474&width=711&fit=bounds'
         },
       ],
     },
