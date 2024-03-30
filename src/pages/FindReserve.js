@@ -1,64 +1,54 @@
 import React, { useState } from 'react';
-import SearchBar from '../components/SearchBar'; // Update the import path as necessary
-import HotelCard from '../components/HotelCard'; // Update the import path as necessary
-import { hotelChains } from '../components/hotels'; // Corrected path assuming hotel data is structured as provided
+import SearchBar from '../components/SearchBar';
+import RoomCard from '../components/RoomCard';
+import FilterPopup from '../components/FilterPopup'; // Import the FilterPopup component
+import { hotelChains } from '../data/hotels';
 
 const FindReserve = () => {
-  // Consolidating all rooms for display simplicity
-  const allRooms = hotelChains.flatMap(chain => chain.hotels.flatMap(hotel => hotel.rooms.map(room => ({
-    ...room,
-    hotelName: hotel.hotelName, // Add hotel name to each room for clarity
-    chainName: chain.chainName, // Add chain name to each room for clarity
-  }))));
+  const [isFilterPopupOpen, setIsFilterPopupOpen] = useState(false);
+  const [filteredRooms, setFilteredRooms] = useState([]);
 
-  // State for managing filters (simplified to a few amenities for this example)
-  const [filters, setFilters] = useState({
-    wifi: false,
-    pool: false,
-    gym: false,
-  });
-
-  // Simple filter function - extend this to match your filter UI
-  const filteredRooms = allRooms.filter(room => 
-    (!filters.wifi || room.amenities.includes('WiFi')) &&
-    (!filters.pool || room.amenities.includes('Pool')) &&
-    (!filters.gym || room.amenities.includes('Gym'))
+  // Initially, extract all rooms
+  const roomsToDisplay = hotelChains.flatMap(chain => 
+    chain.hotels.flatMap(hotel => 
+      hotel.rooms.map(room => ({
+        ...room,
+        hotelName: hotel.hotelName,
+        chainName: chain.chainName,
+        address: hotel.address,
+      }))
+    )
   );
 
-  // Function to toggle filter states
-  const handleFilterChange = (filter) => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      [filter]: !prevFilters[filter],
-    }));
+  const availableAmenities = Array.from(new Set(roomsToDisplay.flatMap(room => room.amenities)));
+
+  const handleApplyFilters = (selectedAmenities) => {
+    const filtered = roomsToDisplay.filter(room => 
+      selectedAmenities.every(amenity => room.amenities.includes(amenity))
+    );
+    setFilteredRooms(filtered);
   };
 
   return (
     <div className="find-reserve-container">
-      <SearchBar /> {/* Ensure your SearchBar can interact with the room listing */}
-      <div className="filter-controls">
-        {/* Simplified filter controls for demonstration */}
-        <label>
-          <input type="checkbox" checked={filters.wifi} onChange={() => handleFilterChange('wifi')} /> Free WiFi
-        </label>
-        <label>
-          <input type="checkbox" checked={filters.pool} onChange={() => handleFilterChange('pool')} /> Pool
-        </label>
-        <label>
-          <input type="checkbox" checked={filters.gym} onChange={() => handleFilterChange('gym')} /> Gym
-        </label>
-      </div>
+      <SearchBar />
+      <button onClick={() => setIsFilterPopupOpen(true)} className="filter-amenities-button">
+        Filter Amenities</button>
+      <FilterPopup 
+        isOpen={isFilterPopupOpen} 
+        onClose={() => setIsFilterPopupOpen(false)} 
+        onApplyFilters={handleApplyFilters} 
+        availableAmenities={availableAmenities} 
+      />
       <div className="room-listing">
-        {filteredRooms.length > 0 ? (
-          filteredRooms.map((room, index) => (
-            <HotelCard key={index} {...room} />
-          ))
-        ) : (
-          <p>No rooms available based on selected filters.</p>
-        )}
+        {(filteredRooms.length > 0 ? filteredRooms : roomsToDisplay).map((room, index) => (
+          <RoomCard 
+            key={index}
+            room={room}
+          />
+        ))}
       </div>
     </div>
   );
 };
-
 export default FindReserve;

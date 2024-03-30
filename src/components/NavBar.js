@@ -20,9 +20,6 @@ function NavBar() {
             <Link to="/about-us">ABOUT US</Link>
           </li>
           <li className="nav-item">
-            <Link to="/our-hotels">OUR HOTELS</Link>
-          </li>
-          <li className="nav-item">
             <Link to="/find-reserve">FIND & RESERVE</Link>
           </li>
         </ul>

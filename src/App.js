@@ -6,6 +6,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import JoinUs from './pages/JoinUs';
 import FindReserve from './pages/FindReserve';
+import AboutUs from './pages/AboutUs' // Ensure this component exists and the path is correct
+
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/find-reserve" element={<FindReserve />} />
-          {/* Define other routes here */}
+       <Route path="/about-us" element={<AboutUs />} />
         </Routes>
-        <Footer /> {/* Add the Footer component here */}
+        <Footer /> {/* Add the Footer component here */} 
       </div>
     </Router>
   );
