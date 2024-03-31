@@ -57,32 +57,7 @@ const RoomBookingPopup = ({ room, onClose }) => {
               required
             />
           </div>
-          <div className="form-field">
-            <label htmlFor="hotelChain">Hotel Chain</label>
-            <select 
-              id="hotelChain"
-              name="hotelChain" 
-              value={bookingDetails.hotelChain}
-              onChange={handleInputChange}
-            >
-              {/* Populate options based on available hotel chains */}
-              <option value={room.chainName}>{room.chainName}</option>
-              {/* Add more options if needed */}
-            </select>
-          </div>
-          <div className="form-field">
-            <label htmlFor="hotelLocation">Location</label>
-            <select 
-              id="hotelLocation"
-              name="hotelLocation" 
-              value={bookingDetails.hotelLocation}
-              onChange={handleInputChange}
-            >
-              {/* Populate options based on available hotel locations */}
-              <option value={room.address}>{room.address}</option>
-              {/* Add more options if needed */}
-            </select>
-          </div>
+          
           {/* Repeat for other inputs */}
           <button type="submit" className="submit-booking-btn">
             Confirm Booking

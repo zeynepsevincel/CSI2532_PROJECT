@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './JoinUs.css'; // Make sure to create a corresponding CSS file
+import './JoinUs.css'; 
 
 const JoinUs = () => {
   const [fullName, setFullName] = useState('');
